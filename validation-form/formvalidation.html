@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <link rel="stylesheet" href="./form.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>sign up</h1>
+        </div>
+        <div class="form">
+            <div class="form-group">
+                <label for="">User Name :</label><br>
+                <input type="text" id="username" placeholder="username" autocomplete="off">
+                <i class="ion-checkmark-circled" id="icon"></i>
+                <i class="ion-android-alert" id="icon2"></i><br>
+                <small id="usernameerr"></small>
+            </div>
+            <div class="form-group">
+                <label for="">Phone Number :</label><br>
+                <input type="number" id="phonenumber" placeholder="phone number" autocomplete="off">
+                <i class="ion-checkmark-circled" id="icon3"></i>
+                <i class="ion-android-alert" id="icon4"></i><br>
+                <small id="phonenumbererr"></small>
+            </div>
+            <div class="form-group">
+                <label for="">Email :</label><br>
+                <input type="text" id="email" placeholder="email" autocomplete="off">
+                <i class="ion-checkmark-circled" id="icon5"></i>
+                <i class="ion-android-alert" id="icon6"></i><br>
+                <small id="emailerr"></small>
+            </div>
+            <div class="form-group">
+                <label for="">Password :</label><br>
+                <input type="password" id="password" placeholder="password" autocomplete="off">
+                <i class="ion-checkmark-circled" id="icon7"></i>
+                <i class="ion-android-alert" id="icon8"></i><br>
+                <small id="passworderr"></small>
+
+            </div>
+            <div class="form-group">
+                <label for="">Confirm password :</label><br>
+                <input type="password" id="confirmpassword" placeholder="password" autocomplete="off">
+                <i class="ion-checkmark-circled" id="icon9"></i>
+                <i class="ion-android-alert" id="icon10"></i><br>
+                <small id="confirmpassworderr"></small>
+
+            </div>
+            <div class="DOB">
+                <label for="">DOB:</label><br>
+                <input type="date" id="dob">
+                <i class="ion-checkmark-circled" id="icon11"></i>
+                <i class="ion-android-alert" id="icon12"></i><br>
+                <small id="doberr"></small>
+            </div>
+            <button onclick="sub()">submit</button>
+        </div>
+    </div>
+
+
+
+    <script src="./form.js"></script>
+</body>
+
+</html>
